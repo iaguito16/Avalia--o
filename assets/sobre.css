@@ -1,0 +1,23 @@
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sobre-img img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sobre-texto {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+}
