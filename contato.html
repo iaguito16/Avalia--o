@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startup Tech — Contato</title>
-  <link rel="stylesheet" href="assets/base.css">
-  <link rel="stylesheet" href="assets/contato.css">
+  <title>Aether Labs — Contato</title>
+  <link rel="stylesheet" href="./assets/base.css">
+  <link rel="stylesheet" href="./assets/contato.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">Startup<span>Tech</span></a>
+      <a href="index.html" class="logo">Aether<span>Labs</span></a>
       <nav aria-label="Menu principal">
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -23,36 +23,41 @@
   </header>
 
   <main>
-    <section class="contato container">
-      <h1>Fale conosco</h1>
-      <form action="obrigado.html" method="post">
-        <label for="nome">Nome *</label>
-        <input type="text" id="nome" name="nome" required minlength="2">
+  <section class="contato container">
+    <h1>Fale conosco</h1>
+    <form action="./obrigado.html" method="get"
+      <label for="nome">Nome *</label>
+      <input type="text" id="nome" name="nome" required minlength="2"
+             pattern="[A-Za-zÀ-ú\s]+"
+             title="O nome deve conter apenas letras e espaços">
 
-        <label for="email">E-mail *</label>
-        <input type="email" id="email" name="email" required>
+      <label for="email">E-mail *</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone" name="telefone">
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone"
+             pattern="\d+"
+             title="O telefone deve conter apenas números">
 
-        <label for="mensagem">Mensagem *</label>
-        <textarea id="mensagem" name="mensagem" required minlength="5"></textarea>
+      <label for="mensagem">Mensagem *</label>
+      <textarea id="mensagem" name="mensagem" required minlength="5"></textarea>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="ano-contato"></span> Startup Tech — Todos os direitos reservados</p>
-      <div class="social">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
-      </div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="ano-contato"></span> Aether Labs — Todos os direitos reservados</p>
+    <div class="social">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
     </div>
-  </footer>
-  <script>document.getElementById('ano-contato').textContent = new Date().getFullYear();</script>
+  </div>
+</footer>
+<script>document.getElementById('ano-contato').textContent = new Date().getFullYear();</script>
+
 </body>
 </html>

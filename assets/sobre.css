@@ -1,23 +1,19 @@
-.sobre {
-  display: flex;
-  flex-wrap: wrap;
+.sobre-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas iguais */
   align-items: center;
+  justify-items: center; /* centraliza conteúdo em cada coluna */
   gap: 2rem;
-}
-
-.sobre-img img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sobre-texto {
-  flex: 1;
+  text-align: center; /* título e parágrafos centralizados */
 }
 
-@media (max-width: 768px) {
-  .sobre {
-    flex-direction: column;
-    text-align: center;
-  }
+.sobre-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }

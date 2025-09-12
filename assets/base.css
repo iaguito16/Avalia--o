@@ -1,4 +1,4 @@
-/* Reset e estilos globais */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,11 @@ header {
   background: #222;
   color: #fff;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
 }
+
 
 header h1,
 header .logo {
@@ -64,4 +68,74 @@ main {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  text-align: center; 
+}
+
+.hero-img {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center; 
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* HEADER */
+.site-header {
+  background: #f8f8f8;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #007BFF; 
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #007BFF;
 }
