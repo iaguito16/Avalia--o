@@ -1,15 +1,18 @@
 .sobre-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* duas colunas iguais */
+  grid-template-columns: repeat(2, 1fr);
+  
   align-items: center;
-  justify-items: center; /* centraliza conteúdo em cada coluna */
+  justify-items: center;
+  
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .sobre-texto {
-  text-align: center; /* título e parágrafos centralizados */
+  text-align: center;
+  
 }
 
 .sobre-img img {
